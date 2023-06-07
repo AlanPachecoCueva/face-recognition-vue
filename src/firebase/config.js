@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc } from "firebase/firestore";
 import { getStorage } from "firebase/storage"; // Agrega esta importación
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { ref, uploadBytes, getDownloadURL, listAll } from 'firebase/storage';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -21,4 +21,4 @@ const db = getFirestore(app);
 const storage = getStorage(app); // Inicializa el servicio de almacenamiento
 
 
-export {app, db, storage, ref, uploadBytes, getDownloadURL, collection, addDoc};
+export {app, db, storage, ref, uploadBytes, getDownloadURL, collection, addDoc, listAll};

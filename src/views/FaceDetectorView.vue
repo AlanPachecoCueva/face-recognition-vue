@@ -4,7 +4,8 @@
 </template>
 
 <script>
-import { startDetection } from '../face-api/detectionLogic.js';
+import { startDetection, descargarImagen } from '../face-api/detectionLogic.js';
+import { getImages } from '../firebase/manageUsers.js';
 
 export default {
     data() {
@@ -20,8 +21,15 @@ export default {
 
     },
     async mounted() {
+        
+        //Primero habría que recibir todos los usuarios y filtrar cada url de cada usuario y ponerla en una lista
+        const imagenes = await getImages();
+        console.log("Imagenes: ", imagenes);
+     
+        //Luego estas urls se las envía
         console.log("Empieza");
-        await startDetection("ewad");
+        const res = await startDetection(imagenes);
+        console.error("RES: ", res);
     },
     methods: {
 

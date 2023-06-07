@@ -4,7 +4,7 @@ import {
   ref,
   uploadBytes,
   storage,
-  getDownloadURL, collection, addDoc
+  getDownloadURL, collection, addDoc, listAll
 } from "../firebase/config.js";
 
 async function createUser(user) {
@@ -46,4 +46,33 @@ async function createUser(user) {
   }
 }
 
-export { createUser };
+
+async function getImages() {
+  try {
+    const bucketRef = ref(storage, "images");
+    const imagenes = [];
+
+    // Obtiene la lista de todos los elementos del bucket
+    const elementos = await listAll(bucketRef);
+
+    // Itera sobre cada elemento y agrega las imágenes a la lista
+    elementos.items.forEach(async (itemRef) => {
+      // Obtiene la URL de descarga de la imagen
+      const url = await getDownloadURL(itemRef);
+
+      // Crea un objeto con la información de la imagen
+      const imagen = {
+        nombre: itemRef.name,
+        url: url,
+      };
+
+      // Agrega la imagen a la lista
+      imagenes.push(imagen);
+    });
+
+    return imagenes;
+  } catch (error) {
+    console.error('Error al obtener las imágenes:', error);
+  }
+}
+export { createUser, getImages };
