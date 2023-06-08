@@ -4,7 +4,10 @@ import {
   ref,
   uploadBytes,
   storage,
-  getDownloadURL, collection, addDoc, listAll
+  getDownloadURL,
+  collection,
+  addDoc,
+  listAll,getDocs,
 } from "../firebase/config.js";
 
 async function createUser(user) {
@@ -46,6 +49,28 @@ async function createUser(user) {
   }
 }
 
+const getUsers = async () => {
+  const citiesCol = collection(db, "cities");
+  const citySnapshot = await getDocs(citiesCol);
+  const cityList = citySnapshot.docs.map((doc) => doc.data());
+
+  try {
+    // Obtener la colección de proyectos en Firestore
+    const snapshot = await collection(db, "users");
+
+    const usersSnapshot = await getDocs(snapshot);
+
+    const users = usersSnapshot.docs.map((doc) => {
+      // Agregar el ID del documento a los datos del proyecto
+      return { id: doc.id, ...doc.data() };
+    });
+
+    // Retornar la lista de proyectos
+    return users;
+  } catch (error) {
+    throw error; // Lanzar el error para que sea capturado en el catch del enrutador
+  }
+};
 
 async function getImages() {
   try {
@@ -72,7 +97,7 @@ async function getImages() {
 
     return imagenes;
   } catch (error) {
-    console.error('Error al obtener las imágenes:', error);
+    console.error("Error al obtener las imágenes:", error);
   }
 }
-export { createUser, getImages };
+export { createUser, getImages, getUsers };

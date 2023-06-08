@@ -12,9 +12,11 @@
     "face-api.js": "^0.22.2",
     "firebase": "^9.22.1",
     "pug-plain-loader": "^1.1.0",
+    "sweetalert2": "^11.7.11",
     "util": "^0.12.5",
     "vue": "^3.2.13",
-    "vue-router": "^4.2.2"
+    "vue-router": "^4.2.2",
+    "vue-sweetalert2": "^5.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
