@@ -1,4 +1,3 @@
-
 <template>
     <div class="container" :class="{ 'isRegister': !logIn }">
         <registerComponent v-if="!logIn"></registerComponent>
@@ -24,10 +23,12 @@
     margin: 1% 0% 10% 0%;
 }
 
-.btn {
-    background-color: aqua;
-    margin: 3% 0%;
+.btn {   
+    margin: 0% 0%;
+    color: #03e9f4; 
+    z-index: 20;  
 }
+
 </style>
 
 <script>

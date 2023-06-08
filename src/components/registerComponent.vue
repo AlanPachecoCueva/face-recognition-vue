@@ -23,10 +23,10 @@
       <div id="uploader">
         <div class="row uploadDoc">
           <div class="col-sm-3">
-            <div class="docErr">Por favor seleccione una imagen válida</div><!--error-->
+            <div class="docErr"  >Por favor seleccione una imagen válida</div><!--error-->
             <div class="fileUpload btn btn-orange">
               <!-- <img src="https://image.flaticon.com/icons/svg/136/136549.svg" class="icon"> -->
-              <span class="upl" id="upload">seleccione su foto</span>
+              <span class="upl" id="upload" style="background-color: white">Seleccione su foto</span>
               <input type="file" class="upload up" id="up" @change="onFileChange" />
             </div><!-- btn-orange -->
           </div><!-- col-3 -->
