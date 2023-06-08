@@ -161,7 +161,7 @@ async function start(images) {
         }
 
         // Si no se encuentra coincidencia, rechazar la promesa
-        reject(new Error('No se encontró coincidencia.'));
+        resolve(false);
       },
       (err) => reject(err)
     );

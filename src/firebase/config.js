@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
+import { getFirestore, collection, addDoc, getDocs, where, query, updateDoc, doc, arrayUnion  } from "firebase/firestore";
 import { getStorage } from "firebase/storage"; // Agrega esta importación
 import { ref, uploadBytes, getDownloadURL, listAll } from 'firebase/storage';
 
@@ -21,4 +21,4 @@ const db = getFirestore(app);
 const storage = getStorage(app); // Inicializa el servicio de almacenamiento
 
 
-export {app, db, storage, ref, uploadBytes, getDownloadURL, collection, addDoc, listAll, getDocs};
+export {app, db, storage, ref, uploadBytes, getDownloadURL, collection, addDoc, listAll, getDocs, where, query, updateDoc, doc, arrayUnion };

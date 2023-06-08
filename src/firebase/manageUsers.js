@@ -50,9 +50,6 @@ async function createUser(user) {
 }
 
 const getUsers = async () => {
-  const citiesCol = collection(db, "cities");
-  const citySnapshot = await getDocs(citiesCol);
-  const cityList = citySnapshot.docs.map((doc) => doc.data());
 
   try {
     // Obtener la colección de proyectos en Firestore

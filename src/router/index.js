@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from "vue-router";
 //Componentes
 import authView from "../views/authView.vue";
 import FaceDetectorView from '../views/FaceDetectorView.vue';
+import attendanceView from "@/views/attendanceView.vue";
+
 const router = createRouter({
   history: createWebHistory("/"),
   routes: [
@@ -15,6 +17,11 @@ const router = createRouter({
       path: "/faceDetector",
       name: "faceDetector",
       component: FaceDetectorView,
+    },
+    {
+      path: "/attendance",
+      name: "attendance",
+      component: attendanceView,
     },
   ],
 });
