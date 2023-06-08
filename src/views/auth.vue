@@ -11,9 +11,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 50% !important;
-    height: 50% !important;
-    margin: 1% 0% 10% 0%;
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
+    min-height: 100vh; /* Establece el tamaño mínimo de la altura del contenedor al 100% del viewport */
 }
 
 .isRegister{
@@ -50,7 +50,7 @@ export default {
             if (this.logIn) {
                 this.textoBtn = "Registrarse";
             } else {
-                this.textoBtn = "Iniciar sesión";
+                this.textoBtn = "Iniciar Sesión";
             }
         }
     }

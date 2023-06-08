@@ -19,124 +19,300 @@
       </a>
     </form>
   </div>
-  <div class="bubbles">
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
+   <div class="burbujas">
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
   </div>
+
+  <div class="burbujas">
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+  </div>
+
 </template>
 
 <script>
 export default {
   // Resto de la configuración del componente
 }
+
+ 
 </script>
 
+
 <style>
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: linear-gradient(#141e30, #243b55);
-  overflow: hidden;
+
+.burbuja{
+    position: fixed;
+
+    left:10%;
+    bottom:10%;
+
+    width:10px;
+    height:10px;
+    
+    border-radius: 10px;
+
+    margin-left:10%;
+    background-color: aqua;
+    opacity: 0.01;
+
+    animation: bublesAnimation 15s linear infinite;
+    z-index: -1;
 }
 
-@keyframes bubbles {
-  0% {
-    transform: translateY(100vh);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-200vh);
-    opacity: 0;
-  }
+.burbuja:nth-child(2){
+    left:20%;
+    bottom:10%;
+
+    width:30px;
+    height:30px;
+    
+    border-radius: 30px;
+
+    animation-duration: 30s;
+    animation-delay: 2s;
+}
+.burbuja:nth-child(3){
+    left:30%;
+    bottom:10%;
+
+    width:15px;
+    height:15px;
+    
+    border-radius: 15px;
+
+    animation-duration: 20s;
+    animation-delay: 1s;
+}
+.burbuja:nth-child(4){
+    left:40%;
+    bottom:10%;
+
+    width:25;
+    height:25;
+    
+    border-radius: 25;
+
+    animation-duration: 8s;
+    animation-delay: 3s;
+}
+.burbuja:nth-child(5){
+    left:50%;
+    bottom:10%;
+
+    width:33px;
+    height:33px;
+    
+    border-radius: 33px;
+
+    animation-duration: 40s;
+    animation-delay: 2s;
+}
+.burbuja:nth-child(6){
+    left:60%;
+    bottom:10%;
+
+    width:18px;
+    height:18px;
+    
+    border-radius: 18px;
+
+    animation-duration: 25s;
+    animation-delay: 4s;
+}
+.burbuja:nth-child(7){
+    left:70%;
+    bottom:10%;
+
+    width:5px;
+    height:5px;
+    
+    border-radius: 5px;
+
+    animation-duration: 28s;
+    animation-delay: 2s;
+}
+.burbuja:nth-child(8){
+    left:80%;
+    bottom:10%;
+
+    width:27px;
+    height:27px;
+    
+    border-radius: 27px;
+
+    animation-duration: 37s;
+    animation-delay: 3s;
 }
 
-.login-box {
-  position: relative;
-  z-index: 1;
+/* Second group */
+.burbuja2{
+    position: fixed;
+
+    left:10%;
+    bottom:10%;
+    width:10px;
+    height:10px;
+    border-radius: 10px;
+
+    margin-left:10%;
+    background-color: rgb(25, 217, 211);
+    opacity: 0.01;
+
+    animation: bublesAnimation2 15s linear infinite;
+    z-index: -1;
 }
 
-.bubbles {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  pointer-events: none;
-  z-index: 0;
-  overflow: hidden;
+.burbuja2:nth-child(1){
+    left:5%;
+    bottom:10%;
+
+    width:27px;
+    height:27px;
+    
+    border-radius: 27px;
+
+    animation-duration: 22s;
+    animation-delay: 3s;
+}
+.burbuja2:nth-child(2){
+    left:-10%;
+    bottom:10%;
+
+    width:27px;
+    height:27px;
+    
+    border-radius: 27px;
+
+    animation-duration: 29s;
+    animation-delay: 2s;
+}
+.burbuja2:nth-child(3){
+    left:15%;
+    bottom:10%;
+
+    width:27px;
+    height:27px;
+    
+    border-radius: 27px;
+
+    animation-duration: 34s;
+    animation-delay: 1s;
+}
+.burbuja2:nth-child(4){
+    left:-5%;
+    bottom:10%;
+
+    width:27px;
+    height:27px;
+    
+    border-radius: 27px;
+
+    animation-duration: 39s;
+    animation-delay: 1s;
+}
+.burbuja2:nth-child(5){
+    left:35%;
+    bottom:10%;
+
+    width:27px;
+    height:27px;
+    
+    border-radius: 27px;
+
+    animation-duration: 38s;
+    animation-delay: 2s;
+}
+.burbuja2:nth-child(6){
+    left:45%;
+    bottom:10%;
+
+    width:27px;
+    height:27px;
+    
+    border-radius: 27px;
+
+    animation-duration: 26s;
+    animation-delay: 2s;
+}
+.burbuja2:nth-child(7){
+    left:90%;
+    bottom:10%;
+
+    width:27px;
+    height:27px;
+    
+    border-radius: 27px;
+
+    animation-duration: 37s;
+    animation-delay: 3s;
+}
+.burbuja2:nth-child(8){
+    left:0%;
+    bottom:10%;
+
+    width:27px;
+    height:27px;
+    
+    border-radius: 27px;
+
+    animation-duration: 16s;
+    animation-delay: 2s;
 }
 
-.bubble {
-  position: absolute;
-  bottom: -50px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #a8c1db;
-  opacity: 0.5;
-  animation: bubbles 10s ease-in-out infinite; /* Ajusta la duración de la animación */
+@keyframes bublesAnimation{
+    0%{
+        bottom:-10%;
+    }
+    40%{
+        transform: translateX(-25px);  
+    }
+    50%{
+        opacity: 0.1;
+    }
+    80%{
+        transform: translateX(25px); 
+    }
+    100%{
+        opacity: 0.01;
+        bottom:100%;
+    }
 }
 
-.bubble:nth-child(1) {
-  left: calc(10% + 20px);
-  animation-delay: 0s;
-}
-
-.bubble:nth-child(2) {
-  left: calc(20% + 40px);
-  animation-delay: 1s;
-}
-
-.bubble:nth-child(3) {
-  left: calc(30% + 60px);
-  animation-delay: 2s;
-}
-
-.bubble:nth-child(4) {
-  left: calc(40% + 80px);
-  animation-delay: 3s;
-}
-
-.bubble:nth-child(5) {
-  left: calc(50% + 100px);
-  animation-delay: 4s;
-}
-
-.bubble:nth-child(6) {
-  left: calc(60% + 120px);
-  animation-delay: 5s;
-}
-
-.bubble:nth-child(7) {
-  left: calc(70% + 140px);
-  animation-delay: 6s;
-}
-
-.bubble:nth-child(8) {
-  left: calc(80% + 160px);
-  animation-delay: 7s;
-}
-
-.bubble:nth-child(9) {
-  left: calc(90% + 180px);
-  animation-delay: 8s;
-}
-
-.bubble:nth-child(10) {
-  left: calc(100% + 200px);
-  animation-delay: 9s;
+@keyframes bublesAnimation2{
+    0%{
+        bottom:-10%;
+    }
+    40%{
+        transform: translateX(100px); 
+    }
+    50%{
+        opacity: 0.1;
+    }
+    80%{
+        transform: translateY(-25px);
+    }
+    100%{
+        opacity: 0.01;
+        
+        bottom:100%;
+    }
 }
 
 </style>

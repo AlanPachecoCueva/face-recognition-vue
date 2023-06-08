@@ -7,6 +7,31 @@
       <div v-for="index in 20" :key="index" class="bubble"></div>
     </div>
   </div>
+
+   <div class="burbujas">
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+    <div class="burbuja"></div>
+  </div>
+
+  <div class="burbujas">
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+    <div class="burbuja2"></div>
+  </div> 
 </template>
 
 
@@ -129,43 +154,5 @@ export default {
 .camera {
   position: relative;
 }
-
-.bubble-container {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100vh;
-  pointer-events: none;
-  z-index: -1;
-}
-
-.bubble {
-  position: absolute;
-  bottom: 0;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #87CEFA; /* Color azul pastel */
-  animation: bubbles 10s linear infinite;
-  pointer-events: none;
-}
-
-@keyframes bubbles {
-  0% {
-    opacity: 0;
-    transform: translateY(0) scale(0.2);
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(-100vh) scale(1);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-200vh) scale(0.2);
-  }
-}
-
 
 </style>
