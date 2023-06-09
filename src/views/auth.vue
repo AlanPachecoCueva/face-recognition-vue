@@ -22,11 +22,14 @@
     min-height: 75% !important;
     height: 75% !important;
     margin: 1% 0% 10% 0%;
+    
 }
 
 .btn {
     margin: 3% 0%;
+    
 }
+
 </style>
 
 <script>

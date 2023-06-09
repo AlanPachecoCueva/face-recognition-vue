@@ -59,19 +59,14 @@ export default {
 
 .burbuja{
     position: fixed;
-
     left:10%;
     bottom:10%;
-
     width:10px;
-    height:10px;
-    
+    height:10px;    
     border-radius: 10px;
-
     margin-left:10%;
     background-color: aqua;
     opacity: 0.01;
-
     animation: bublesAnimation 15s linear infinite;
     z-index: -1;
 }
@@ -79,84 +74,65 @@ export default {
 .burbuja:nth-child(2){
     left:20%;
     bottom:10%;
-
     width:30px;
-    height:30px;
-    
+    height:30px;    
     border-radius: 30px;
-
     animation-duration: 30s;
     animation-delay: 2s;
 }
+
 .burbuja:nth-child(3){
     left:30%;
     bottom:10%;
-
     width:15px;
-    height:15px;
-    
+    height:15px;    
     border-radius: 15px;
-
     animation-duration: 20s;
     animation-delay: 1s;
 }
+
 .burbuja:nth-child(4){
     left:40%;
     bottom:10%;
-
     width:25;
-    height:25;
-    
+    height:25;    
     border-radius: 25;
-
     animation-duration: 8s;
     animation-delay: 3s;
 }
 .burbuja:nth-child(5){
     left:50%;
     bottom:10%;
-
     width:33px;
-    height:33px;
-    
+    height:33px;    
     border-radius: 33px;
-
     animation-duration: 40s;
     animation-delay: 2s;
 }
 .burbuja:nth-child(6){
     left:60%;
     bottom:10%;
-
     width:18px;
-    height:18px;
-    
+    height:18px;    
     border-radius: 18px;
-
     animation-duration: 25s;
     animation-delay: 4s;
 }
 .burbuja:nth-child(7){
     left:70%;
     bottom:10%;
-
     width:5px;
-    height:5px;
-    
+    height:5px;    
     border-radius: 5px;
-
     animation-duration: 28s;
     animation-delay: 2s;
 }
 .burbuja:nth-child(8){
     left:80%;
     bottom:10%;
-
     width:27px;
-    height:27px;
-    
+    height:27px;    
     border-radius: 27px;
-
     animation-duration: 37s;
     animation-delay: 3s;
 }
@@ -164,17 +140,14 @@ export default {
 /* Second group */
 .burbuja2{
     position: fixed;
-
     left:10%;
     bottom:10%;
     width:10px;
     height:10px;
     border-radius: 10px;
-
     margin-left:10%;
     background-color: rgb(25, 217, 211);
     opacity: 0.01;
-
     animation: bublesAnimation2 15s linear infinite;
     z-index: -1;
 }
