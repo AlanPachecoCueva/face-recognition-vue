@@ -10,7 +10,7 @@
         <input type="password" name="" required="">
         <label>Password</label>
       </div>
-      <a href="#">
+      <a href="/faceDetector">
         <span></span>
         <span></span>
         <span></span>

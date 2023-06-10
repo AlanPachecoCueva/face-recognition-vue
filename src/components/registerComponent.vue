@@ -255,36 +255,27 @@ export default {
 .burbuja2:nth-child(3){
     left:15%;
     bottom:10%;
-
     width:27px;
-    height:27px;
-    
+    height:27px;    
     border-radius: 27px;
-
     animation-duration: 34s;
     animation-delay: 1s;
 }
 .burbuja2:nth-child(4){
     left:-5%;
     bottom:10%;
-
     width:27px;
-    height:27px;
-    
+    height:27px;    
     border-radius: 27px;
-
     animation-duration: 39s;
     animation-delay: 1s;
 }
 .burbuja2:nth-child(5){
     left:35%;
     bottom:10%;
-
     width:27px;
-    height:27px;
-    
+    height:27px;    
     border-radius: 27px;
-
     animation-duration: 38s;
     animation-delay: 2s;
 }
