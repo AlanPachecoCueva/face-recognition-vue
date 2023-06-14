@@ -5,13 +5,17 @@
     <loginComponent v-if="logIn"></loginComponent>
     <el-button v-if="logIn" class="btn loginBtn" :class="{ 'active': logIn }" @click="switchButton()">
       <!--Iniciar Sesión-->
-      Registrarse
-    </el-button>
-    <el-button v-if="!logIn" class="btn registerBtn" :class="{ 'active': !logIn }" @click="switchButton()">
-      Tienes cuenta? Iniciar Sesion
-    </el-button>
+      REGISTRARSE
+    </el-button>    
   </div>
   </div>
+  <div class="inicioF">
+  <div class="inicio">
+  <el-button v-if="!logIn" class="btn registerBtn" :class="{ 'active': !logIn }" @click="switchButton()">
+     INICIAR SESIÓN
+    </el-button>
+    </div>
+    </div>
 </template>
 
 <script>
@@ -46,11 +50,29 @@ export default {
 
 .containerFake{
   width: 300px; /* Ajusta el ancho del contenedor según tus necesidades */
-  height: 200px; /* Ajusta la altura del contenedor según tus necesidades */
+  height: 10px; /* Ajusta la altura del contenedor según tus necesidades */
   margin: auto; /* Margen automático para centrar horizontalmente */
   /* Opción 2: centrar verticalmente utilizando relleno */
-  padding-top: calc(55vh - 1px);  /* Calcula la mitad de la altura de la pantalla y resta la mitad de la altura del contenedor */
+  padding-top: calc(63vh - 1px);  /* Calcula la mitad de la altura de la pantalla y resta la mitad de la altura del contenedor */
+  padding-left:16vh;
 }
+
+
+.inicioF {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  transform: translateY(80%); /* Adjust the vertical position */
+  }
+
+.inicio {  
+
+}
+
 
 .container {
   display: flex;
@@ -78,8 +100,8 @@ export default {
 .registerBtn {
   color: white;
   margin: 0 0 5% 0; /* Ajusta el margen inferior para ambos botones */
-  padding: 10px 20px;
-  padding-top: calc(15vh - 1px);
+  padding: 5px 20px;
+  padding-top: calc(1vh - 1px);
 }
 
 .btn.active {

@@ -27,7 +27,6 @@
 </template>
 
 <style>
-
 .attendanceTable.smallTable {
   width: 80%; /* Ajusta el ancho de la tabla según tus necesidades */
 }
@@ -89,7 +88,6 @@
   background-color: #f2f2f2; /* Color del fondo del scrollbar */
 }
 </style>
-
 
 
 <script>
